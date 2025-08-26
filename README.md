@@ -3,7 +3,7 @@
 This repository documents a **completed end‑to‑end migration** of a sample .NET application suite (“Readit”) to **Microsoft Azure**.  
 The solution includes web apps, a shopping cart on AKS, a Weather API on Linux, serverless order processing, observability, security with Key Vault & Managed Identity, and a basic DR setup.
 
-![Architecture](architecture.png)
+![Architecture](/Architecture.png)
 
 ---
 
@@ -23,26 +23,6 @@ The solution includes web apps, a shopping cart on AKS, a Weather API on Linux, 
 
 **Public entry**: Application Gateway (WAF optional) fronts Catalog VM and Inventory App.  
 **Private reachability**: Private Endpoints for SQL/Key Vault/Storage/Cosmos; VNet Integration for App Service; peering for AGW→Catalog VM and VNet-to-VNet traffic.
-
----
-
-## Repository Layout
-
-```
-readit-azure-portfolio/
-├─ docs/
-│  └─ images/architecture.png
-├─ infra/             # (optional) Bicep/Terraform (not committed here)
-├─ k8s/               # AKS manifests for cart (Service/Deployment/Ingress if used)
-├─ src/               # App code if included later
-├─ scripts/           # Helper scripts (az/kubectl)
-├─ .github/workflows/ # CI examples (optional)
-├─ .gitignore
-├─ LICENSE
-└─ README.md
-```
-
----
 
 ## Deploy Summary
 
