@@ -1,4 +1,4 @@
-# Readit – .NET App Migration to Azure (Completed)
+# Readit – .NET App Migration to Azure
 
 This repository documents a **completed end‑to‑end migration** of a sample .NET application suite (“Readit”) to **Microsoft Azure**.  
 The solution includes web apps, a shopping cart on AKS, a Weather API on Linux, serverless order processing, observability, security with Key Vault & Managed Identity, and a basic DR setup.
@@ -164,3 +164,16 @@ The solution includes web apps, a shopping cart on AKS, a Weather API on Linux, 
 - Remove any lingering public endpoints or NSG rules used during provisioning.
 
 ---
+
+## Credits / Source Code Notice
+
+The application code (Catalog, Inventory, Cart, etc.) used in this migration exercise 
+is **not included in this repository**, as it is not my original work.  
+Instead, this repo focuses on **the Azure migration process**: deployment steps, architecture, 
+configuration, and integration with Azure services.
+
+If you would like to experiment with the original application, please refer to the sample 
+project provided in the Udemy course *“Microsoft Azure: From Zero to Hero – The Complete Guide”* 
+
+This repository is intended as a **portfolio project** to demonstrate my cloud engineering 
+skills in deploying and managing workloads in Azure.
